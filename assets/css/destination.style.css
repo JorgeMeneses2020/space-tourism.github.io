@@ -29,6 +29,7 @@
 }
 
 #container {
+    overflow-y: auto;
     width: 1440px;
     height: 1024px;
     /* background: #0B0D17; */

@@ -1,7 +1,7 @@
 * {
     margin: 0 auto;
     padding: 0;
-    overflow-y: auto;
+
 
 }
 
@@ -38,7 +38,7 @@ body {
 #container {
     width: 1440px;
     height: 900px;
-
+    overflow-y: auto;
 }
 
 /* ENCABEZADO */
