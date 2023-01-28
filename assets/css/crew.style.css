@@ -1,0 +1,536 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('./fonts/barlow/BarlowCondensed-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('./fonts/Barlow2/Barlow-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: 'Bellefair';
+    src: url('./fonts/Bellefair/Bellefair-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+body {
+    background: #0B0D17;
+    background-image: url(../crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+}
+
+#container {
+    width: 1440px;
+    height: 900px;
+
+}
+
+/* ENCABEZADO */
+header {
+
+    width: 1385px;
+    height: 96px;
+    left: 55px;
+    top: 40px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-top: 40px;
+
+}
+
+
+
+hr {
+    position: absolute;
+    width: 473px;
+    height: 1px;
+    left: 167px;
+    top: 88px;
+
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    z-index: 10;
+
+}
+
+header .logo {
+    width: 100%;
+    height: 100%;
+
+}
+
+header .logo img {
+    width: 48px;
+    padding-top: 24px;
+}
+
+#menu {
+    width: 88%;
+    display: block;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    line-height: 96px;
+
+
+    /* position: absolute;
+width: 542px; */
+
+}
+
+#menu li {
+    display: inline-block;
+    padding-right: 23px;
+    height: 100%;
+
+}
+
+#menu li:first-child {
+    margin-left: 173px;
+}
+
+#menu li a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+
+}
+
+#menu li:nth-child(3) a {
+    border-bottom: solid #FFFFFF;
+}
+
+#menu li a:hover {
+
+    border-bottom: solid #FFFFFF;
+
+}
+
+#title {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: #D0D6F9;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+#content {
+    width: 100%;
+    height: 764px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#team {
+    margin-top: 76px;
+    margin-left: 167px;
+}
+
+#team h3 {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+#team h3 b {
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+#team h2 {
+    margin-top: 154px;
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+#team h1 {
+    margin-top: 15px;
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+#desc {
+    width: 444px;
+    margin-left: 0;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+
+}
+
+#hamburguesa,
+#close {
+    display: none;
+    cursor: pointer;
+
+}
+
+#puntos {
+    display: flex;
+    list-style: none;
+    flex-wrap: nowrap;
+    width: 132px;
+    margin-left: 0;
+    margin-top: 120px;
+}
+
+.punto {
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+}
+
+.punto:hover {
+    background: #FFFFFF;
+    opacity: 1;
+
+
+}
+
+.punto a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+
+#img {
+    margin-top: 73px;
+    margin-left: 28px;
+    width: 568.07px;
+    height: 712px;
+}
+
+/* #img img {
+    width: 100%;
+    height: 100%;
+} */
+
+
+/* FIN CONTENT */
+
+/* RESPONSIVE  TABLET*/
+
+@media (min-width: 732px) and (max-width: 1228px) {
+
+    hr {
+        display: none;
+    }
+
+    body {
+        background-image: url(../crew/background-crew-tablet.jpg);
+        background-size: 100% 100%;
+        background-color: #0B0D17;
+        /* background-attachment: fixed; */
+
+        ;
+
+    }
+
+    #container {
+        width: 100%;
+        height: 1024px;
+
+    }
+
+    header {
+        width: 93%;
+        display: grid;
+        margin: 0 auto;
+        padding-top: 0;
+        grid-template-columns: 36.29% 64.71%;
+
+    }
+
+    #menu {
+        width: 100%;
+        padding-left: 17px;
+    }
+
+    #menu li {
+        height: 100%;
+        line-height: 96px;
+    }
+
+    #menu li:first-child {
+        margin-left: 24px;
+    }
+
+    #menu li a {
+        display: block;
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 2.3625px;
+        color: #FFFFFF;
+    }
+
+    #content {
+        display: block;
+        height: 906px;
+
+    }
+
+    #team {
+        margin: 0 auto;
+        width: 100%;
+
+    }
+
+    #team h3 {
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 39px;
+
+        letter-spacing: 3.375px;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        margin-top: 40px;
+
+    }
+
+
+    #team h2,
+    #team h1,
+    #team #desc {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    #team h1 {
+        font-size: 40px;
+        line-height: 46px;
+        margin-top: 8px;
+        margin-right: 16px;
+    }
+
+    #team h2 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    #team #desc {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+
+    #puntos {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #img {
+
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 456px;
+        height: 532px;
+    }
+}
+
+/* FIN RESPONSIVE TABLET*/
+
+/* INICIO RESPONSIVE MOBILE */
+@media (min-width: 320px) and (max-width: 731px) {
+    body {
+        background-image: url(../crew/background-crew-mobile.jpg);
+        background-size: 100% 100%;
+
+
+    }
+
+    hr {
+        display: none;
+    }
+
+    #container {
+        width: 100%;
+        height: 850px;
+
+    }
+
+    #content {
+        display: block;
+        height: 754px;
+    }
+
+    header {
+        padding-top: 0;
+    }
+
+    #hamburguesa,
+    #close {
+        display: block;
+        position: absolute;
+        top: 33px;
+        right: 5%;
+    }
+
+    #close {
+        display: none;
+        z-index: 10;
+    }
+
+    #menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 52.91%;
+        height: 100%;
+        padding-left: 32px;
+        z-index: 5;
+    }
+
+    .logo {
+        padding-left: 5%;
+    }
+
+    #menu li {
+        display: block;
+        height: 19px;
+        width: 100%;
+        line-height: 19px;
+        margin-top: 32px;
+    }
+
+    #menu li:first-child {
+        margin-top: 118px;
+        margin-left: 0px;
+    }
+
+    #team {
+        margin: 0 auto;
+    }
+
+    #team h3 {
+        position: absolute;
+        top: 88px;
+        width: 100%;
+        font-size: 16px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #img {
+        display: block;
+        margin: 0 auto;
+        width: 87.2%;
+        height: 223px;
+        position: absolute;
+        top: 139px;
+        left: 6.4%;
+        border-bottom: solid 0.1em #484a53;
+
+    }
+
+    #img img {
+        display: block;
+        margin: 0 auto;
+        width: 35.8%;
+        height: 222px;
+
+    }
+
+    #team h2 {
+        position: absolute;
+        top: 436px;
+        width: 94%;
+        text-align: center;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+
+    #team h1 {
+        font-size: 24px;
+        position: absolute;
+        top: 462px;
+        width: 94%;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    #team #puntos {
+        position: absolute;
+        top: 394px;
+        left: 38.4%;
+        width: 96px;
+
+    }
+
+    #puntos {
+        margin: 0 auto;
+    }
+
+    #puntos .punto {
+        width: 10px;
+        height: 10px;
+    }
+
+    #desc {
+        font-size: 15px;
+        width: 100%;
+        width: 87.2%;
+        position: absolute;
+        top: 506px;
+        text-align: center;
+        left: 6.4%;
+    }
+
+}
