@@ -41,6 +41,7 @@ body {
 #container {
     width: 1440px;
     overflow-y: auto;
+    overflow-x: hidden;
 
 
 
