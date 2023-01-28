@@ -105,7 +105,9 @@ header .logo img {
 
 #menu li:first-child {
     margin-left: 173px;
+    border-bottom: solid #FFFFFF;
 }
+
 
 #menu li a {
     display: block;

@@ -533,6 +533,7 @@ width: 542px; */
     #info {
         margin-top: 26px;
         font-size: 14px;
+        width: 100%;
     }
 
     #info h6 {
