@@ -33,6 +33,7 @@
     overflow-x: hidden;
     width: 100%;
     height: 1024px;
+    /* margin-left: 3.47%; */
     /* background: #0B0D17; */
 
 }
@@ -46,7 +47,7 @@ body {
 /* ENCABEZADO */
 header {
 
-    width: 1385px;
+    width: 100%;
     height: 96px;
     left: 55px;
     top: 40px;
@@ -76,11 +77,13 @@ header .logo {
     width: 100%;
     height: 100%;
 
+
 }
 
 header .logo img {
     width: 48px;
     padding-top: 24px;
+    margin-left: 3.47%;
 }
 
 #menu {
